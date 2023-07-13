@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
@@ -28,33 +29,33 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='https://najel-a.github.io/Portfolio-Website/' className='navbar-logo' onClick={closeMobileMenu}>
+          <NavLink to='/' className='navbar-logo' onClick={closeMobileMenu}>
             Najel
             <i class="fa-solid fa-bowl-rice fa-fade"></i>
-          </Link>
+          </NavLink>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='https://najel-a.github.io/Portfolio-Website/' className='nav-links' onClick={closeMobileMenu}>
+              <NavLink to='/' className='nav-links' onClick={closeMobileMenu}>
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className='nav-item'>
-              <Link to='https://najel-a.github.io/Portfolio-Website/about' className='nav-links' onClick={closeMobileMenu}>
+              <NavLink to='/about' className='nav-links' onClick={closeMobileMenu}>
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className='nav-item'>
-              <Link to='https://najel-a.github.io/Portfolio-Website/work' className='nav-links' onClick={closeMobileMenu}>
+              <NavLink to='/work' className='nav-links' onClick={closeMobileMenu}>
                 Work
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to='/contact' className='nav-links-mobile' onClick={closeMobileMenu}>
+              <NavLink to='/contact' className='nav-links-mobile' onClick={closeMobileMenu}>
                 Contact
-              </Link>
+              </NavLink>
             </li>
           </ul>
           {button && <Button buttonStyle='btn--outline'>Contact</Button>}
