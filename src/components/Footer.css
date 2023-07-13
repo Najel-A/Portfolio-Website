@@ -8,17 +8,30 @@ body {
 .container {
   min-height: 100%;
   position: relative;
+  /* Add some padding-bottom to create space for the footer */
+  padding-bottom: 80px;
 }
 
 .footer-container {
-  position: absolute;
+  position: fixed; /* Change from absolute to fixed */
   bottom: 0;
+  left: 0;
   width: 100%;
   background-color: #242424;
   display: flex;
   flex-direction: column;
   align-items: center;
-} 
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  /* Adjust the height of the footer if needed */
+  height: 80px;
+}
+
+.footer-container.footer-visible {
+  opacity: 1;
+}
+
+
   /* Social Icons */
   .social-icon-link {
     color: #fff;

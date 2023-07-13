@@ -1,58 +1,79 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
 function Footer() {
+  const [footerVisible, setFooterVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      if (scrollPosition + windowHeight >= documentHeight) {
+        setFooterVisible(true);
+      } else {
+        setFooterVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const footerClass = footerVisible ? 'footer-container footer-visible' : 'footer-container';
+
   return (
-    <div className='footer-container'>
-      <section class='social-media'>
-        <div class='social-media-wrap'>
-          <div class='social-icons'>
+    <div className={footerClass}>
+      <section className='social-media'>
+        <div className='social-media-wrap'>
+          <div className='social-icons'>
 
             <Link
-              class='social-icon-link facebook'
+              className='social-icon-link facebook'
               to='https://www.facebook.com/najel.alarcon/'
               target='_blank'
               aria-label='Facebook'
             >
-              <i class='fab fa-facebook-f' />
+              <i className='fab fa-facebook-f' />
             </Link>
 
             <Link
-              class='social-icon-link spotify'
+              className='social-icon-link spotify'
               to='https://open.spotify.com/user/ietws22ymxg71z557j6r81u3t?si=00392b00797d484e'
               target='_blank'
               aria-label='Spotify'
             >
-              <i class='fab fa-spotify' />
+              <i className='fab fa-spotify' />
             </Link>
 
             <Link
-              class='social-icon-link github'
+              className='social-icon-link github'
               to='https://github.com/Najel-A'
               target='_blank'
               aria-label='Youtube'
             >
-              <i class='fab fa-github' />
+              <i className='fab fa-github' />
             </Link>
 
             <Link
-              class='social-icon-link discord'
+              className='social-icon-link discord'
               to='https://discordapp.com/users/Juandissimo'
               target='_blank'
               aria-label='Discord'
             >
-              <i class='fab fa-discord' />
+              <i className='fab fa-discord' />
             </Link>
 
             <Link
-              class='social-icon-link linkedin'
+              className='social-icon-link linkedin'
               to='https://www.linkedin.com/in/najel-alarcon/'
               target='_blank'
               aria-label='LinkedIn'
             >
-              <i class='fab fa-linkedin' />
+              <i className='fab fa-linkedin' />
             </Link>
           </div>
         </div>

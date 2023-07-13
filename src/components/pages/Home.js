@@ -1,18 +1,17 @@
-import React from 'react';
-import '../../App.css';
-import Navbar from '../Navbar';
-import Footer from '../Footer';
+import React, { useEffect, useState } from 'react';
+import './Home.css';
 
 function Home() {
-  const styles = {
-    backgroundImage: "url('../../../public/logo512.png')",
-    /* Additional background properties */
-  };
+    // Maybe add a slide in for an image
+  const [slideIn, setSlideIn] = useState(false);
 
+  useEffect(() => {
+    setSlideIn(true);
+  }, []);
+  
   return (
-    <div style={styles}>
-      <Navbar/>
-      <Footer/>
+    <div>
+      
     </div>
   );
 }
