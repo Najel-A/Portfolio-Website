@@ -25,6 +25,13 @@ function Navbar() {
 
   window.addEventListener('resize', showButton);
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <nav className='navbar'>

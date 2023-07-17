@@ -7,7 +7,7 @@ function About() {
     // needed this just to have the footer appear on scroll down only
 
     return (
-        <div>
+        <div style={{ backgroundColor: 'blue' }}>
           <section>
             <h1>Welcome to My Website</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>

@@ -51,9 +51,9 @@
   }
   
   .nav-links {
-    font-family: 'Arial', sans-serif; /* Set your desired font family */
-    font-size: 1.5rem; /* Adjust the font size as needed */
-    font-weight: 500; /* Adjust the font weight as desired */
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
     color: #fff;
     display: flex;
     align-items: center;

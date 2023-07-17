@@ -2,16 +2,43 @@ import React, { useEffect, useState } from 'react';
 import './Home.css';
 
 function Home() {
-    // Maybe add a slide in for an image
-  const [slideIn, setSlideIn] = useState(false);
+  const [showWelcome, setShowWelcome] = useState(false);
+  const [welcomeText, setWelcomeText] = useState('');
 
   useEffect(() => {
-    setSlideIn(true);
+    const welcomeMessage = 'Welcome, my name is Najel!';
+    let currentIndex = -1;
+    let animationFrameId;
+
+    const typeText = () => {
+      if (currentIndex < welcomeMessage.length) {
+        setWelcomeText((prevText) => prevText + welcomeMessage.charAt(currentIndex));
+        currentIndex++;
+        animationFrameId = requestAnimationFrame(typeText);
+      }
+    };
+
+    setShowWelcome(true);
+    animationFrameId = requestAnimationFrame(typeText);
+
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+      setWelcomeText('');
+    };
   }, []);
-  
+
+  useEffect(() => {
+    setWelcomeText('');
+  }, []);
+
   return (
-    <div>
-      
+    <div className="home">
+      <div className="content">
+        {showWelcome && <div className="welcome-text">{welcomeText}</div>}
+        {/* Other content */}
+        {/* Add more content here */}
+        <div className="filler"></div>
+      </div>
     </div>
   );
 }
