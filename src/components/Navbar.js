@@ -32,11 +32,26 @@ function Navbar() {
     }
   };
 
+  const homeOnClick = () => {
+    scrollToSection('home');
+    closeMobileMenu();
+  }
+
+  const aboutOnClick = () => {
+    scrollToSection('about');
+    closeMobileMenu();
+  }
+
+  const workOnClick = () => {
+    scrollToSection('work');
+    closeMobileMenu();
+  }
+
   return (
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <NavLink to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <NavLink className='navbar-logo' onClick={homeOnClick}>
             Najel
             <i class="fa-solid fa-bowl-rice fa-fade"></i>
           </NavLink>
@@ -45,20 +60,22 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <NavLink to='/' className='nav-links' onClick={closeMobileMenu}>
+              <NavLink to='/' className='nav-links' onClick={homeOnClick}>
                 Home
               </NavLink>
             </li>
             <li className='nav-item'>
-              <NavLink to='/about' className='nav-links' onClick={closeMobileMenu}>
+              <NavLink className='nav-links' onClick={aboutOnClick}>
                 About
               </NavLink>
             </li>
             <li className='nav-item'>
-              <NavLink to='/work' className='nav-links' onClick={closeMobileMenu}>
+              <NavLink className='nav-links' onClick={workOnClick}>
                 Work
               </NavLink>
             </li>
+
+            {/* Fix the Contact button part later */}
             <li>
               <NavLink to='/contact' className='nav-links-mobile' onClick={closeMobileMenu}>
                 Contact

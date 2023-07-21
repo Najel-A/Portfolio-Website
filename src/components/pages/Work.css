@@ -1,0 +1,44 @@
+.work {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 2rem; /* Add some padding to create space around the content */
+  }
+  
+  .welcome-text {
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(20, end);
+  }
+  
+  .spacer {
+    height: 20rem;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .welcome-text {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .welcome-text {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
