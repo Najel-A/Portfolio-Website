@@ -47,6 +47,7 @@ function Navbar() {
     closeMobileMenu();
   }
 
+  // Removed the "to=<location>" in NavLinks
   return (
     <>
       <nav className='navbar'>
@@ -60,7 +61,7 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <NavLink to='/' className='nav-links' onClick={homeOnClick}>
+              <NavLink className='nav-links' onClick={homeOnClick}>
                 Home
               </NavLink>
             </li>

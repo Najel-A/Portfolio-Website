@@ -3,6 +3,7 @@ import Navbar from '../Navbar';
 import './Home.css';
 import './About.css';
 import './Work.css';
+import placeholder from '../../images/placeholder.jpg';
 
 const useWelcomeAnimation = (welcomeMessage) => {
   const [welcomeText, setWelcomeText] = useState('');
@@ -60,10 +61,17 @@ function Home() {
 
       <div className="about" id="about">
         <div className="content">
-          {showAboutWelcome && <div className="welcome-text">{aboutWelcomeText}</div>}
-          {/* Content for the about section */}
-          {/* Add more content here */}
-          {/* <div className="filler"></div> */}
+          {/* {showAboutWelcome && <div className="welcome-text">{aboutWelcomeText}</div>} */}
+          <div className="image-container">
+            <img src={placeholder} alt="Placeholder" />
+          </div>
+          <div className="text-container">
+            <p>
+              Hi! I'm Najel Alarcon, a recent Computer Engineering graduate with a minor in Computer Science from the University of California, Santa Cruz. I'm based in San Francisco, CA, and I'm eager to make a mark in the world of software engineering.
+              Throughout my journey at UC Santa Cruz from September 2019 to June 2023, I honed my skills in various programming languages, including C, C++, Python, JavaScript, and Java. Additionally, I'm well-versed in modern technologies like React, HTML, CSS, Git, and Unix.
+              Thank you for visiting my portfolio! Feel free to reach out to me at nlalarco@ucsc.edu or connect with me on LinkedIn at linkedin.com/in/najel-alarcon. I'm excited about the possibilities of working together to shape a better technological future.
+            </p>
+          </div>
         </div>
       </div>
 

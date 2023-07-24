@@ -1,12 +1,35 @@
 .about {
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: white;
     padding: 2rem; /* Add some padding to create space around the content */
   }
   
+  img {
+    max-width: 100%;
+    margin-right: 2px; /* Add some spacing between the image and the paragraph */
+  }
+
+
+.about-content {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  flex: 0 0 auto; /* Allow the image to maintain its original size */
+  max-width: auto; /* Adjust the width as needed */
+}
+
+.text-container {
+  flex: 1; /* Allow the paragraph to take the remaining available space */
+}
+.text-container p {
+  white-space: pre-wrap; /* Allow line breaks in the paragraph */
+}
+    
   .welcome-text {
     font-size: 5rem;
     text-align: center;

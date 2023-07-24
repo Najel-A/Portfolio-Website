@@ -12,8 +12,10 @@ function App() {
     <>
       <Router>
         <Navbar/>
+        <Home/>  {/*Loads home page on load */}
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          {/* These might not be necessary */}
+          <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/work" element={<Work/>}/>
         </Routes>
