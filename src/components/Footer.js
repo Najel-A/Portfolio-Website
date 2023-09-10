@@ -32,24 +32,6 @@ function Footer() {
           <div className='social-icons'>
 
             <Link
-              className='social-icon-link facebook'
-              to='https://www.facebook.com/najel.alarcon/'
-              target='_blank'
-              aria-label='Facebook'
-            >
-              <i className='fab fa-facebook-f' />
-            </Link>
-
-            <Link
-              className='social-icon-link spotify'
-              to='https://open.spotify.com/user/ietws22ymxg71z557j6r81u3t?si=00392b00797d484e'
-              target='_blank'
-              aria-label='Spotify'
-            >
-              <i className='fab fa-spotify' />
-            </Link>
-
-            <Link
               className='social-icon-link github'
               to='https://github.com/Najel-A'
               target='_blank'
@@ -59,12 +41,12 @@ function Footer() {
             </Link>
 
             <Link
-              className='social-icon-link discord'
-              to='https://discordapp.com/users/Juandissimo'
-              target='_blank'
-              aria-label='Discord'
+              className='social-icon-link'
+              to='mailto:nlalarco@ucsc.edu'
+              // target='_blank' Don't want page to reload
+              aria-label='Mail'
             >
-              <i className='fab fa-discord' />
+              <i className='fab fa-envelope' />
             </Link>
 
             <Link

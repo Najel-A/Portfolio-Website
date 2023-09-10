@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
+import resume from '../images/Najel-Resume.pdf';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -47,7 +47,12 @@ function Navbar() {
     closeMobileMenu();
   }
 
-  // Removed the "to=<location>" in NavLinks
+  const resumeOnClick = () => {
+    // Open the Resume PDF in a new tab
+    window.open(resume, '_blank');
+    closeMobileMenu();
+  }
+
   return (
     <>
       <nav className='navbar'>
@@ -76,14 +81,20 @@ function Navbar() {
               </NavLink>
             </li>
 
-            {/* Fix the Contact button part later */}
             <li>
-              <NavLink to='/contact' className='nav-links-mobile' onClick={closeMobileMenu}>
-                Contact
-              </NavLink>
+              <button className='nav-links-mobile' onClick={resumeOnClick}>
+                Resume
+              </button>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Contact</Button>}
+          {button && (
+            <a
+           className='btn-mobile' rel="noreferrer">
+            <Button buttonStyle='btn--outline' onClick={resumeOnClick}>
+              Resume
+            </Button>
+            </a>
+          )}
         </div>
       </nav>
     </>
