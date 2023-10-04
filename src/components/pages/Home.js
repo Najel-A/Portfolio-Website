@@ -4,6 +4,7 @@ import './Home.css';
 import './About.css';
 import './Work.css';
 import placeholder from '../../images/placeholder.jpg';
+import Card from './Card';
 
 const useWelcomeAnimation = (welcomeMessage) => {
   const [welcomeText, setWelcomeText] = useState('');
@@ -77,10 +78,42 @@ function Home() {
 
       <div className="work" id="work">
         <div className="content">
-          {showWorkWelcome && <div className="welcome-text">{workWelcomeText}</div>}
-          {/* Content for the work section */}
-          {/* Add more content here */}
-          {/* <div className="filler"></div> */}
+          <div class="flex-container">
+            <div class="flex-item-left">
+              <Card
+                imageUrl={placeholder}
+                name="name2"
+                description="Blah"
+                githubLink="www.google.com"
+              />
+            </div>
+            <div class="flex-item-left">
+              <Card
+                imageUrl={placeholder}
+                name="name2"
+                description="Blah"
+                githubLink="www.google.com"
+              />
+            </div>
+
+            <div class="flex-item-left">
+              <Card
+                imageUrl={placeholder}
+                name="name2"
+                description="Blah"
+                githubLink="www.google.com"
+              />
+            </div>
+            <div class="flex-item-left">
+              <Card
+                imageUrl={placeholder}
+                name="name2"
+                description="Blah"
+                githubLink="www.google.com"
+              />
+            </div>
+          </div>
+          
         </div>
       </div>
     </>

@@ -1,44 +1,55 @@
 .work {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    padding: 2rem; /* Add some padding to create space around the content */
-  }
-  
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row; /* Ensure that the flex-direction is set to row */
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+  width: 100%; /* Allow the container to take full width */
+  justify-content: flex-start; /* Start items from the left */
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 0 0 calc(50% - 10px); /* Calculate the flex-basis to include margin */
+  margin: 5px;
+  box-sizing: border-box; /* Ensure padding and margin are included in the width */
+}
+
+.spacer {
+  height: 20rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   .welcome-text {
-    font-size: 5rem;
-    text-align: center;
-    color: white;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 3s steps(20, end);
+    font-size: 2.5rem;
   }
-  
-  .spacer {
-    height: 20rem;
+  .flex-item-left {
+    flex: 0 0 calc(100% - 10px); /* Adjust flex-basis for full width */
   }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .welcome-text {
-      font-size: 2.5rem;
-    }
+}
+
+@media (max-width: 480px) {
+  .welcome-text {
+    font-size: 2.5rem;
   }
-  
-  @media (max-width: 480px) {
-    .welcome-text {
-      font-size: 2.5rem;
-    }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
+  to {
+    width: 100%;
   }
-  
+}

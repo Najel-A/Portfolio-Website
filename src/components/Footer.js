@@ -11,17 +11,21 @@ function Footer() {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
-
-      if (scrollPosition + windowHeight >= documentHeight) {
+  
+      // You can add a buffer to ensure the footer appears
+      const buffer = 50; // Adjust this value as needed
+  
+      if (scrollPosition + windowHeight >= documentHeight - buffer) {
         setFooterVisible(true);
       } else {
         setFooterVisible(false);
       }
     };
-
+  
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  
 
   const footerClass = footerVisible ? 'footer-container footer-visible' : 'footer-container';
 

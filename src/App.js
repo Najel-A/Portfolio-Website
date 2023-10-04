@@ -21,7 +21,7 @@ function App() {
           <Route path="/work" element={<Work/>}/> */}
           <Route path="/resume" element={<Resume/>}/>
         </Routes>
-        <a href={Resume} target="_blank">Open Resume</a>
+        <a href={Resume} target="_blank"></a>
         <Footer />
       </Router>
     </>
