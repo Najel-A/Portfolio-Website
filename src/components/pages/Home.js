@@ -48,6 +48,11 @@ function Home() {
     'Welcome to the Work page!'
   );
 
+  const reliableFileTransferDescription = "A robust file transfer application in C, using the User Datagram Protocol (UDP) for efficient data transmission. It featured the implementation of a selective repeat protocol on top of UDP, ensuring reliable and error-free file transfers by incorporating acknowledgment, sequence numbers, and retransmission. The project also integrated error detection and correction mechanisms, such as checksum calculations and packet acknowledgment, to guarantee the integrity and reliability of transmitted files.";
+  const slackCloneMobileAppDescription = "Three versions of a Slack Clone Mobile Application in Kotlin, Swift, and React Native. This dynamic application seamlessly integrates RESTful APIs for real-time messaging, robust authorization token management, and collaborative features.Throughout development, thorough testing was conducted to ensure the reliability and functionality of the apps.";
+  const IoTDescription = "An obstacle detection, crafted using C++ and powered by Arduino Nano 33 BLE. This cutting-edge system seamlessly integrates IR Obstacle Avoidance Sensors (IRAS) with GPIO read/write operations, triggering an external red LED when obstacles are detected. Not only does it provide real-time obstacle detection feedback on an LCD display,  it also configures the Nano 33 BLE as a peripheral device. This enables real-time updates via our custom BLE Cell Phone App or BLE console, complete with a custom read/notify service that delivers 32-bit float numbers for X, Y, Z acceleration, motion status, and obstacle presence.";
+  const HTTPServerDescription = "A fully functional HTTP server built in C supporting CRUD operations such as GET, HEAD, and PUT. This server boasts a simplified HTTP protocol with essential response codes such as 200, 201, 404 and 500, advanced socket programming for reliability, thread-safe operations for core HTTP methods, efficient byte parsing, customizable resource utilization, and an audit log for monitoring and debugging requests from server to clients.";
+
   return (
     <>
       <Navbar />
@@ -82,16 +87,16 @@ function Home() {
             <div class="flex-item-left">
               <Card
                 imageUrl={placeholder}
-                name="name2"
-                description="Blah"
-                githubLink="www.google.com"
+                name="Reliable File Transfer"
+                description={reliableFileTransferDescription}
+                githubLink=""
               />
             </div>
             <div class="flex-item-left">
               <Card
                 imageUrl={placeholder}
-                name="name2"
-                description="Blah"
+                name="Slack Clone Mobile Application"
+                description={slackCloneMobileAppDescription}
                 githubLink="www.google.com"
               />
             </div>
@@ -99,16 +104,16 @@ function Home() {
             <div class="flex-item-left">
               <Card
                 imageUrl={placeholder}
-                name="name2"
-                description="Blah"
+                name="IoT Obstacle Detection System"
+                description={IoTDescription}
                 githubLink="www.google.com"
               />
             </div>
             <div class="flex-item-left">
               <Card
                 imageUrl={placeholder}
-                name="name2"
-                description="Blah"
+                name="HTTP Server"
+                description={HTTPServerDescription}
                 githubLink="www.google.com"
               />
             </div>
