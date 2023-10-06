@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Portfolio-Website/static/css/main.fed83213.css",
-    "main.js": "/Portfolio-Website/static/js/main.9a1c87b1.js",
+    "main.js": "/Portfolio-Website/static/js/main.f0df8974.js",
     "static/media/placeholder.jpg": "/Portfolio-Website/static/media/placeholder.c20ea16a81b5348eca11.jpg",
     "static/media/Najel-Resume.pdf": "/Portfolio-Website/static/media/Najel-Resume.33c22c035cdc4519e602.pdf",
     "index.html": "/Portfolio-Website/index.html",
     "main.fed83213.css.map": "/Portfolio-Website/static/css/main.fed83213.css.map",
-    "main.9a1c87b1.js.map": "/Portfolio-Website/static/js/main.9a1c87b1.js.map"
+    "main.f0df8974.js.map": "/Portfolio-Website/static/js/main.f0df8974.js.map"
   },
   "entrypoints": [
     "static/css/main.fed83213.css",
-    "static/js/main.9a1c87b1.js"
+    "static/js/main.f0df8974.js"
   ]
 }

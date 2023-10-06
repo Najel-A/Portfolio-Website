@@ -1,67 +1,80 @@
+/* Container for the image and text */
 .about {
-    min-height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    padding: 2rem; /* Add some padding to create space around the content */
-  }
-  
-  img {
-    max-width: 100%;
-    margin-right: 2px; /* Add some spacing between the image and the paragraph */
-  }
+  min-height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 2rem;
+}
+
+.anchor-spacing {
+  margin-right: 5px; /* Adjust the margin as needed */
+}
 
 
+/* Styles for the image */
+img {
+  max-width: 100%;
+  margin-right: 2px;
+}
+
+/* Container for the content */
 .about-content {
   display: flex;
   align-items: center;
 }
 
+/* Container for the image */
 .image-container {
-  flex: 0 0 auto; /* Allow the image to maintain its original size */
-  max-width: auto; /* Adjust the width as needed */
+  flex: 0 0 auto;
+  max-width: auto;
 }
 
+/* Container for the text */
 .text-container {
-  flex: 1; /* Allow the paragraph to take the remaining available space */
+  flex: 1;
 }
+
+/* Style for the text within the container */
 .text-container p {
-  white-space: pre-wrap; /* Allow line breaks in the paragraph */
+  white-space: pre-wrap;
 }
-    
+
+/* Welcome text styles */
+.welcome-text {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(20, end);
+}
+
+/* Spacer for vertical space */
+.spacer {
+  height: 20rem;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
   .welcome-text {
-    font-size: 5rem;
-    text-align: center;
-    color: white;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 3s steps(20, end);
+    font-size: 2.5rem;
   }
-  
-  .spacer {
-    height: 20rem;
+}
+
+@media (max-width: 480px) {
+  .welcome-text {
+    font-size: 2.5rem;
   }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .welcome-text {
-      font-size: 2.5rem;
-    }
+}
+
+/* Typing animation keyframes */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  @media (max-width: 480px) {
-    .welcome-text {
-      font-size: 2.5rem;
-    }
+  to {
+    width: 100%;
   }
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
+}

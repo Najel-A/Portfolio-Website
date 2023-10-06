@@ -66,16 +66,17 @@ function Home() {
       </div>
 
       <div className="about" id="about">
-        <div className="content">
-          {/* {showAboutWelcome && <div className="welcome-text">{aboutWelcomeText}</div>} */}
-          <div className="image-container">
-            <img src={placeholder} alt="Placeholder" />
+        <div class="about-content">
+          <div class="image-container">
+            <img src={placeholder} height={450} width={450}/>
           </div>
-          <div className="text-container">
-            <p>
-              Hi! I'm Najel Alarcon, a recent Computer Engineering graduate with a minor in Computer Science from the University of California, Santa Cruz. I'm based in San Francisco, CA, and I'm eager to make a mark in the world of software engineering.
-              Throughout my journey at UC Santa Cruz from September 2019 to June 2023, I honed my skills in various programming languages, including C, C++, Python, JavaScript, and Java. Additionally, I'm well-versed in modern technologies like React, HTML, CSS, Git, and Unix.
-              Thank you for visiting my portfolio! Feel free to reach out to me at nlalarco@ucsc.edu or connect with me on LinkedIn at linkedin.com/in/najel-alarcon. I'm excited about the possibilities of working together to shape a better technological future.
+          <div class="text-container">
+            <p>Hi! I'm Najel Alarcon, a recent Computer Engineering graduate with a minor in Computer Science from the University of California, Santa Cruz.
+              I'm based in San Francisco, CA, and I'm eager to make a mark in the world of software engineering.
+              Throughout my journey at UC Santa Cruz from September 2019 to June 2023, I honed my skills in various programming
+               languages, including C, C++, Python, JavaScript, and Java. Additionally, I'm well-versed in modern technologies like React, HTML, CSS, Git, and Unix.
+              Thank you for visiting my portfolio! Feel free to reach out to me at <a href="mailto:nlalarco@ucsc.edu">nlalarco@ucsc.edu</a> or connect with me on LinkedIn at <a href="https://www.linkedin.com/in/najel-alarcon/" target="_blank">linkedin.com/in/najel-alarcon</a>.
+               I'm excited about the possibilities of working together to shape a better technological future.
             </p>
           </div>
         </div>
