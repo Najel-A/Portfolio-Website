@@ -88,9 +88,9 @@ function Home() {
             <div class="flex-item-left">
               <Card
                 imageUrl={placeholder}
-                name="Reliable File Transfer"
+                name="File Transfer"
                 description={reliableFileTransferDescription}
-                githubLink=""
+                githubLink="https://gitfront.io/r/user-5426869/A6J34nYmR9Jj/Simple-Reliable-File-Transfer/"
               />
             </div>
             <div class="flex-item-left">
@@ -98,7 +98,7 @@ function Home() {
                 imageUrl={placeholder}
                 name="Slack Clone Mobile Application"
                 description={slackCloneMobileAppDescription}
-                githubLink="www.google.com"
+                githubLink="https://gitfront.io/r/user-5426869/NaGqjVdEXybp/Slack-Clone-React-Native/"
               />
             </div>
 
@@ -107,7 +107,7 @@ function Home() {
                 imageUrl={placeholder}
                 name="IoT Obstacle Detection System"
                 description={IoTDescription}
-                githubLink="www.google.com"
+                githubLink="https://gitfront.io/r/user-5426869/BxRsVB38sVWm/IoT-Obstacle-Detection/"
               />
             </div>
             <div class="flex-item-left">
@@ -115,7 +115,7 @@ function Home() {
                 imageUrl={placeholder}
                 name="HTTP Server"
                 description={HTTPServerDescription}
-                githubLink="www.google.com"
+                githubLink="https://gitfront.io/r/user-5426869/tjtNEbqXMFNb/HTTP-Server/"
               />
             </div>
           </div>
