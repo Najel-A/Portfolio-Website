@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio-Website/static/css/main.d2dff6e1.css",
-    "main.js": "/Portfolio-Website/static/js/main.f2558639.js",
+    "main.css": "/Portfolio-Website/static/css/main.7b966bb7.css",
+    "main.js": "/Portfolio-Website/static/js/main.5b7f67ef.js",
+    "static/media/Grad2.jpg": "/Portfolio-Website/static/media/Grad2.c6af7848db4f262a8c34.jpg",
+    "static/media/Grad1.jpg": "/Portfolio-Website/static/media/Grad1.41b11205fd872f219fc6.jpg",
     "static/media/placeholder.jpg": "/Portfolio-Website/static/media/placeholder.c20ea16a81b5348eca11.jpg",
+    "static/media/Home.png": "/Portfolio-Website/static/media/Home.e22e120753b66b3ada9c.png",
+    "static/media/IoTDetection.jpg": "/Portfolio-Website/static/media/IoTDetection.5a235916a61214f5a5b8.jpg",
+    "static/media/slackClone.jpg": "/Portfolio-Website/static/media/slackClone.6822fb3281856a385528.jpg",
+    "static/media/FileTransfer.jpg": "/Portfolio-Website/static/media/FileTransfer.71952961e0c466e7b4aa.jpg",
     "static/media/Najel-Resume.pdf": "/Portfolio-Website/static/media/Najel-Resume.33c22c035cdc4519e602.pdf",
+    "static/media/HTTPServer.png": "/Portfolio-Website/static/media/HTTPServer.5406678f0fafc49bc770.png",
     "index.html": "/Portfolio-Website/index.html",
-    "main.d2dff6e1.css.map": "/Portfolio-Website/static/css/main.d2dff6e1.css.map",
-    "main.f2558639.js.map": "/Portfolio-Website/static/js/main.f2558639.js.map"
+    "main.7b966bb7.css.map": "/Portfolio-Website/static/css/main.7b966bb7.css.map",
+    "main.5b7f67ef.js.map": "/Portfolio-Website/static/js/main.5b7f67ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2dff6e1.css",
-    "static/js/main.f2558639.js"
+    "static/css/main.7b966bb7.css",
+    "static/js/main.5b7f67ef.js"
   ]
 }
