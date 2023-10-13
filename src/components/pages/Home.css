@@ -3,9 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  /* background-color: black; */
+  background-image: url('../../images/Home.png');
+  background-size: cover; /* Ensures the background image covers the entire element */
+  background-position: center center; /* Center the background image both horizontally and vertically */
   padding: 2rem; /* Add some padding to create space around the content */
 }
+
 
 .welcome-text {
   font-size: 5rem;

@@ -4,6 +4,13 @@ import './Home.css';
 import './About.css';
 import './Work.css';
 import placeholder from '../../images/placeholder.jpg';
+import slackCloneImage from '../../images/slackClone.jpg';
+import HTTPServerImage from '../../images/HTTPServer.png';
+import fileTransferImage from '../../images/FileTransfer.jpg';
+import IoTDetectionImage from '../../images/IoTDetection.jpg'
+import GradImage1 from '../../images/Grad1.jpg';
+import GradImage2 from '../../images/Grad2.jpg';
+import homeImage from '../../images/Home.png';
 import Card from './Card';
 
 const useWelcomeAnimation = (welcomeMessage) => {
@@ -58,7 +65,8 @@ function Home() {
       <Navbar />
       <div className="home" id="home">
         <div className="content">
-          {showHomeWelcome && <div className="welcome-text">{homeWelcomeText}</div>}
+          {/* <img src={homeImage}/> */}
+          {/* {showHomeWelcome && <div className="welcome-text">{homeWelcomeText}</div>} */}
           {/* Content for the home section */}
           {/* Add more content here */}
           {/* <div className="filler"></div> */}
@@ -68,7 +76,7 @@ function Home() {
       <div className="about" id="about">
         <div class="about-content">
           <div class="image-container">
-            <img src={placeholder} height={450} width={450}/>
+            <img src={GradImage1} height={750} width={500}/>
           </div>
           <div class="text-container">
             <p>Hi! I'm Najel Alarcon, a recent Computer Engineering graduate with a minor in Computer Science from the University of California, Santa Cruz.
@@ -87,7 +95,7 @@ function Home() {
           <div class="flex-container">
             <div class="flex-item-left">
               <Card
-                imageUrl={placeholder}
+                imageUrl={fileTransferImage}
                 name="File Transfer"
                 description={reliableFileTransferDescription}
                 githubLink="https://gitfront.io/r/user-5426869/A6J34nYmR9Jj/Simple-Reliable-File-Transfer/"
@@ -95,7 +103,7 @@ function Home() {
             </div>
             <div class="flex-item-left">
               <Card
-                imageUrl={placeholder}
+                imageUrl={slackCloneImage}
                 name="Slack Clone Mobile Application"
                 description={slackCloneMobileAppDescription}
                 githubLink="https://gitfront.io/r/user-5426869/NaGqjVdEXybp/Slack-Clone-React-Native/"
@@ -104,7 +112,7 @@ function Home() {
 
             <div class="flex-item-left">
               <Card
-                imageUrl={placeholder}
+                imageUrl={IoTDetectionImage}
                 name="IoT Obstacle Detection System"
                 description={IoTDescription}
                 githubLink="https://gitfront.io/r/user-5426869/BxRsVB38sVWm/IoT-Obstacle-Detection/"
@@ -112,7 +120,7 @@ function Home() {
             </div>
             <div class="flex-item-left">
               <Card
-                imageUrl={placeholder}
+                imageUrl={HTTPServerImage}
                 name="HTTP Server"
                 description={HTTPServerDescription}
                 githubLink="https://gitfront.io/r/user-5426869/tjtNEbqXMFNb/HTTP-Server/"
