@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   /* background-color: black; */
-  background-image: url('../../images/Home.png');
+  background-image: url('../../images/Home.jpg');
   background-size: cover; /* Ensures the background image covers the entire element */
   background-position: center center; /* Center the background image both horizontally and vertically */
   padding: 2rem; /* Add some padding to create space around the content */
