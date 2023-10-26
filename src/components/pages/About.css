@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: black;
   padding: 2rem;
 }
 
@@ -33,6 +33,10 @@ img {
 
 /* Container for the text */
 .text-container {
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-left: 20px;
+  color: white;
   flex: 1;
 }
 
@@ -41,15 +45,6 @@ img {
   white-space: pre-wrap;
 }
 
-/* Welcome text styles */
-.welcome-text {
-  font-size: 5rem;
-  text-align: center;
-  color: white;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 3s steps(20, end);
-}
 
 /* Spacer for vertical space */
 .spacer {
@@ -58,15 +53,11 @@ img {
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
-  .welcome-text {
-    font-size: 2.5rem;
-  }
+  
 }
 
 @media (max-width: 480px) {
-  .welcome-text {
-    font-size: 2.5rem;
-  }
+  
 }
 
 /* Typing animation keyframes */

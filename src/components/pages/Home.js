@@ -79,7 +79,9 @@ function Home() {
             <img src={GradImage1} height={700}/>
           </div>
           <div class="text-container">
-            <p>Hi! I'm Najel Alarcon, a recent Computer Engineering graduate with a minor in Computer Science from the University of California, Santa Cruz.
+            <h1 style={{ color: 'grey', fontSize: '6rem', textDecoration: 'underline' }}>Najel Alarcon</h1>
+
+            <p>Hi! I am a recent Computer Engineering graduate with a minor in Computer Science from the University of California, Santa Cruz.
               I'm based in San Francisco, CA, and I'm eager to make a mark in the world of software engineering.
               Throughout my journey at UC Santa Cruz from September 2019 to June 2023, I honed my skills in various programming
                languages, including C, C++, Python, JavaScript, and Java. Additionally, I'm well-versed in modern technologies like React, HTML, CSS, Git, and Unix.
