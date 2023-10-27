@@ -12,7 +12,7 @@ function Footer() {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
   
-      // You can add a buffer to ensure the footer appears
+     
       const buffer = 50; // Adjust this value as needed
   
       if (scrollPosition + windowHeight >= documentHeight - buffer) {
@@ -50,7 +50,7 @@ function Footer() {
               // target='_blank' Don't want page to reload
               aria-label='Mail'
             >
-              <i className='fab fa-envelope' />
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
             </Link>
 
             <Link

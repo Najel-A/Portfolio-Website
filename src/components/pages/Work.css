@@ -9,33 +9,33 @@
 
 .flex-container {
   display: flex;
-  flex-direction: row; /* Ensure that the flex-direction is set to row */
+  flex-direction: row;
   flex-wrap: wrap;
   font-size: 30px;
   text-align: center;
-  width: 100%; /* Allow the container to take full width */
-  justify-content: flex-start; /* Start items from the left */
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .flex-item-left {
   background-color: #f1f1f1;
   padding: 10px;
-  flex: 0 0 calc(50% - 10px); /* Calculate the flex-basis to include margin */
+  flex: 0 0 calc(50% - 10px);
   margin: 5px;
-  box-sizing: border-box; /* Ensure padding and margin are included in the width */
+  box-sizing: border-box;
 }
 
 .spacer {
   height: 20rem;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
   .welcome-text {
     font-size: 2.5rem;
   }
   .flex-item-left {
-    flex: 0 0 calc(100% - 10px); /* Adjust flex-basis for full width */
+    flex: 0 0 calc(100% - 10px); 
   }
 }
 

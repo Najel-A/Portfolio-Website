@@ -65,11 +65,7 @@ function Home() {
       <Navbar />
       <div className="home" id="home">
         <div className="content">
-          {/* <img src={homeImage}/> */}
-          {/* {showHomeWelcome && <div className="welcome-text">{homeWelcomeText}</div>} */}
-          {/* Content for the home section */}
-          {/* Add more content here */}
-          {/* <div className="filler"></div> */}
+          <h1 style={{color:'green'}}>Welcome</h1>
         </div>
       </div>
 
@@ -108,7 +104,7 @@ function Home() {
                 imageUrl={slackCloneImage}
                 name="Slack Clone Mobile Application"
                 description={slackCloneMobileAppDescription}
-                githubLink="https://gitfront.io/r/user-5426869/NaGqjVdEXybp/Slack-Clone-React-Native/"
+                githubLink="https://gitfront.io/r/user-5426869/6vgYNRwwnUYs/Slack-Clone/"
               />
             </div>
 
